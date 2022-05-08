@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    color: white;
+    cursor: pointer;
+    background-color: blueviolet;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+}
+button:hover{
+color: black;
+background-color: blanchedalmond;
+transition: 2s;
+}
+
+.card h1{
+text-align: center;
+justify-content: center;
+padding: 40px;
+font-size: 1.8em;
+color: #fff;
+z-index: 1;
+}
+.first-main p{
+    font-weight: 300;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+.card{
+position: relative;
+padding: 80px;
+color: white;
+font-size: 20px;
+background-color: #000;
+text-align: center;
+justify-content: center;
+/*background: rgba(255, 255, 255, 0.1);*/
+box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+display: flex;
+
+align-items: center;
+/*border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);*/
+}
+.parent{
+    position: relative;
+    width: 80%;
+    min-height: 20vh;
+    background: linear-gradient(to right top, purple, black);
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*box-shadow: 5px 5px 10px 5px rgba(87, 80, 80, 0.25);*/
+    filter: drop-shadow(15px 15px 30px rgba(0.5, 1, 0.5, 0.15));
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+.parent .first-main{
+    transform: translateY(70px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.parent:hover .first-main{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.second img{
+    
+    
+    border-radius: 5em;
+    border-color: white;
+    width: 70%;
+}
+
+@media screen and (max-width : 640px) {
+    .second img{
+    
+    
+        border-radius: 2em;
+        border-color: white;
+        width: 40%;
+    }
+    .parent{
+        position: relative;
+        width: 50%;
+        min-height: 10vh;
+        background: linear-gradient(to right top, purple, black);
+        padding-top: 10px;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /*box-shadow: 5px 5px 10px 5px rgba(87, 80, 80, 0.25);*/
+        filter: drop-shadow(15px 15px 30px rgba(0.5, 1, 0.5, 0.15));
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+    }
+    .parent .first-main{
+        transform: translateY(35px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .parent:hover .first-main{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .card{
+        position: relative;
+        padding: 40px;
+        color: white;
+        font-size: 10px;
+        background-color: #000;
+        text-align: center;
+        justify-content: center;
+        /*background: rgba(255, 255, 255, 0.1);*/
+        box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+        display: flex;
+        
+        align-items: center;
+    }
+
+.card h1{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 0.8em;
+    color: #fff;
+    z-index: 1;
+    }
+    .first-main p{
+        font-weight: 300;
+        color: #fff;
+        font-size: 0.5em;
+    }
+}
+/*body::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(30% at right 70%);
+    content: '';
+}
+body::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(20% at 10% 10%);
+    content: '';
+}*/
